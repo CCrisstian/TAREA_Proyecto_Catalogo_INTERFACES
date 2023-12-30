@@ -1,9 +1,9 @@
-#<h1 align="center">Proyecto Catalogo</h1>
+# <h1 align="center">Proyecto Catalogo</h1>
 
 El objetivo de esta práctica es exponer los conceptos que hay detrás del polimorfismo implementando clases abstractas e interfaces.
 Se requiere crear un catalogo de producto con un diseño de jerarquía de clases y uso de interfaces para los métodos (o comportamiento).
 
-##<h2>Primero</h2>
+## <h2>Primero</h2>
 Vamos a tener las interfaces que describen el comportamiento que deberán tener las clases de la jerarquía:
 - Interface IProducto con dos firmas de metodos:
    * int getPrecio()
@@ -16,7 +16,7 @@ Vamos a tener las interfaces que describen el comportamiento que deberán tener 
    * String getTitulo();
    * String getEditorial();
 
-##<h2>Segundo</h2>
+## <h2>Segundo</h2>
 Vamos a tener las clases abstractas para las diferentes especializaciones de productos:
 - La Clase Abstracta Producto que debe:
    * implementar la interface IProducto
@@ -27,7 +27,7 @@ Vamos a tener las clases abstractas para las diferentes especializaciones de pro
    * con el atributo fabricante con su respectivo método getter
    *  y constructor.
      
-##<h2<Tercero</h2>
+## <h2>Tercero</h2>
 Las 4 clases concretas que deben heredar de las clases abstractas, y si corresponde implementar alguna interface.
 - La Clase IPhone:
    * poner especial atención en el extends de Electronico.
