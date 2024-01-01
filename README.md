@@ -18,13 +18,13 @@ Vamos a tener las interfaces que describen el comportamiento que deberán tener 
 
 ## <h2>Segundo</h2>
 Vamos a tener las clases abstractas para las diferentes especializaciones de productos:
-- La Clase Abstracta Producto que debe:
+- Clase Abstracta Producto que debe:
    * implementar la interface IProducto
-   * tener el atributo precio con su respectivo método getter
-   *  y el constructor.
-- La Clase Abstracta Electronico que debe implementar:
-   * la interface IElectronico
-   * con el atributo fabricante con su respectivo método getter
+   * atributo precio con su respectivo método getter
+   * y el constructor.
+- Clase Abstracta Electronico que debe implementar:
+   * implementar la interface IElectronico
+   * atributo fabricante con su respectivo método getter
    *  y constructor.
      
 ## <h2>Tercero</h2>
