@@ -1,31 +1,34 @@
-<h1 align="center">Proyecto Catalogo</h1>
+# <h1 align="center">Proyecto Catalogo</h1>
 
 El objetivo de esta práctica es exponer los conceptos que hay detrás del polimorfismo implementando clases abstractas e interfaces.
 Se requiere crear un catalogo de producto con un diseño de jerarquía de clases y uso de interfaces para los métodos (o comportamiento).
 
-Primero, vamos a tener las interfaces que describen el comportamiento que deberán tener las clases de la jerarquía:
-- La Interface IProducto con dos firmas de metodos:
+## <h2>Primero</h2>
+Vamos a tener las interfaces que describen el comportamiento que deberán tener las clases de la jerarquía:
+- Interface IProducto con dos firmas de metodos:
    * int getPrecio()
    * double getPrecioVenta()
-- La Interface IElectronico con una firma de método:
+- Interface IElectronico con una firma de método:
    * String getFabricante()
-- La Interface ILibro con 4 firmas de métodos:
+- Interface ILibro con 4 firmas de métodos:
    * Date getFechaPublicacion();
    * String getAutor();
    * String getTitulo();
    * String getEditorial();
 
-Segundo, vamos a tener las clases abstractas para las diferentes especializaciones de productos:
-- La Clase Abstracta Producto que debe:
+## <h2>Segundo</h2>
+Vamos a tener las clases abstractas para las diferentes especializaciones de productos:
+- Clase Abstracta Producto que debe:
    * implementar la interface IProducto
-   * tener el atributo precio con su respectivo método getter
-   *  y el constructor.
-- La Clase Abstracta Electronico que debe implementar:
-   * la interface IElectronico
-   * con el atributo fabricante con su respectivo método getter
+   * atributo precio con su respectivo método getter
+   * y el constructor.
+- Clase Abstracta Electronico que debe implementar:
+   * implementar la interface IElectronico
+   * atributo fabricante con su respectivo método getter
    *  y constructor.
      
-Tercero, las 4 clases concretas que deben heredar de las clases abstractas, y si corresponde implementar alguna interface.
+## <h2>Tercero</h2>
+Las 4 clases concretas que deben heredar de las clases abstractas, y si corresponde implementar alguna interface.
 - La Clase IPhone:
    * poner especial atención en el extends de Electronico.
    * en el método que debe implementar getPrecioVenta() de la interface IProducto
