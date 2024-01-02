@@ -2,12 +2,10 @@ package CONCRETAS;
 
 import ABSTRACTAS.Producto;
 import INTERFACES.ILibro;
-import INTERFACES.IProducto;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Objects;
 
 public class Libro extends Producto implements ILibro{
 

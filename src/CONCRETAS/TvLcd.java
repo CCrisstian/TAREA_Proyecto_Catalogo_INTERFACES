@@ -1,8 +1,6 @@
 package CONCRETAS;
 
 import ABSTRACTAS.Electronico;
-import INTERFACES.IElectronico;
-import INTERFACES.IProducto;
 
 public class TvLcd extends Electronico{
 

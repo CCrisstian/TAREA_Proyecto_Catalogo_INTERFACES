@@ -1,8 +1,5 @@
 package CONCRETAS;
 
-import ABSTRACTAS.Producto;
-import INTERFACES.IProducto;
-
 import java.util.Date;
 
 public class Comics extends Libro {
