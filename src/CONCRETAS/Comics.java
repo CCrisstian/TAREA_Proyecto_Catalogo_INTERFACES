@@ -28,7 +28,7 @@ public class Comics extends Libro {
         return sb.toString();
     }
 
-    /*------------------MÉTODO--------------------*/
+/*------------------MÉTODO--------------------*/
 
 /*------------------CONSTRUCTOR--------------------*/
     public Comics(int precio, Date fechaPublicación, String autor, String titulo, String editorial, String personaje) {

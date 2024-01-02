@@ -22,7 +22,7 @@ abstract public class Producto implements IProducto {
 /*------------------MÉTODOS--------------------*/
 
 
-    /*------------------CONSTRUCTOR--------------------*/
+/*------------------CONSTRUCTOR--------------------*/
     public Producto(int precio) {
         this.precio = precio;
     }

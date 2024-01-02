@@ -34,7 +34,7 @@ public class IPhone extends Electronico{
         sb.append("\n\n----------------------------------------------------------------");
         return sb.toString();    }
 
-    /*------------------MÉTODOS--------------------*/
+/*------------------MÉTODOS--------------------*/
 
 /*------------------CONSTRUCTOR--------------------*/
     public IPhone(int precio, String fabricante, String color, String modelo) {

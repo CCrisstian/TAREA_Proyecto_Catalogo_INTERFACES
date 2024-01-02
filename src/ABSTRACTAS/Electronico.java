@@ -26,7 +26,7 @@ abstract public class Electronico extends Producto implements IElectronico {
 /*------------------MÉTODOS--------------------*/
 
 
-    /*------------------CONSTRUCTOR--------------------*/
+/*------------------CONSTRUCTOR--------------------*/
     public Electronico(int precio, String fabricante) {
         super(precio);
         this.fabricante = fabricante;
