@@ -5,13 +5,13 @@ Se requiere crear un catalogo de producto con un diseño de jerarquía de clases
 
 ## <h2>Primero</h2>
 Vamos a tener las **<< Interfaces >>** que describen el comportamiento que deberán tener las clases de la jerarquía:
-### - Interface **<<IProducto>>** con dos firmas de metodos:
+### - Interface **<< IProducto >>** con dos firmas de metodos:
    * int getPrecio()
    * double getPrecioVenta()
    * String imprimir()
-### - Interface **<<IElectronico>>** con una firma de método:
+### - Interface **<< IElectronico >>** con una firma de método:
    * String getFabricante()
-### - Interface **<<ILibro>>** con 4 firmas de métodos:
+### - Interface **<< ILibro >>** con 4 firmas de métodos:
    * Date getFechaPublicacion()
    * String getAutor()
    * String getTitulo()
@@ -20,25 +20,25 @@ Vamos a tener las **<< Interfaces >>** que describen el comportamiento que deber
 ## <h2>Segundo</h2>
 Vamos a tener las clases **_abstractas_** para las diferentes especializaciones de productos:
 ### - Clase Abstracta **_Producto_** que debe:
-   * implementar la interface **<<IProducto>>**
+   * implementar la interface **<< IProducto >>**
    * atributo precio con su respectivo método getter
    * constructor
 ### - Clase Abstracta **_Electronico_** que debe implementar:
-   * implementar la interface **<<IElectronico>>**
+   * implementar la interface **<< IElectronico >>**
    * hereda de la clase abstracta **_Producto_**
    * atributo fabricante con su respectivo método getter
    *  constructor
      
 ## <h2>Tercero</h2>
-Las 4 clases **concretas** que deben heredar de las clases **_abstractas_**, y si corresponde implementar alguna** <<interface>>**.
+Las 4 clases **concretas** que deben heredar de las clases **_abstractas_**, y si corresponde implementar alguna **<< interface >>**.
 ### - La Clase **IPhone**:
    * poner especial atención en el extends de **_Electronico_**.
-   * en el método que debe implementar getPrecioVenta() de la interface **<<IProducto>>**
+   * en el método que debe implementar getPrecioVenta() de la interface **<< IProducto >>**
    * sus atributos color y modelo del tipo string
    * con sus respectivos métodos getter
    * constructor
 ### - La Clase **TvLcd**:
-   * poner especial atención en el extends de Electronico
+   * poner especial atención en el extends de **_Electronico_**
    * en el método que debe implementar getPrecioVenta()
    * su atributo pulgada (int) con su respectivo método get
    * constructor.
@@ -50,7 +50,7 @@ Las 4 clases **concretas** que deben heredar de las clases **_abstractas_**, y s
    * atributo editorial (string)
    * con sus respectivos métodos getters
    * constructor
-   * Pero ademas debe implementar la interface ILibro.
+   * Pero ademas debe implementar la interface **<< ILibro >>**
 ### - La Clase **Comics**:
    * con en el extends de **_Libro_**
    * implementar el método de la interface getPrecioVenta()
