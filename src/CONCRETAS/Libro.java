@@ -4,7 +4,10 @@ import ABSTRACTAS.Producto;
 import INTERFACES.ILibro;
 import INTERFACES.IProducto;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
+import java.util.Objects;
 
 public class Libro extends Producto implements ILibro{
 
@@ -46,11 +49,20 @@ public class Libro extends Producto implements ILibro{
     @Override
     public String imprimir() {
         StringBuilder sb = new StringBuilder();
+        sb.append("\nProducto: ").append(getClass().getSimpleName());
         sb.append("\nPrecio: ").append(this.precio);
-        sb.append("Fecha de publicación: ").append(this.fechaPublicación.toString());
-        sb.append("\nAutor:").append(this.autor);
-        sb.append("\nTitulo: ");
 
+        SimpleDateFormat formatoFecha = new SimpleDateFormat("dd MMMM yyyy", new Locale("es", "ES"));
+
+        String fechaFormateada = formatoFecha.format(this.fechaPublicación);
+
+        sb.append("\nFecha de publicación: ").append(fechaFormateada);
+        sb.append("\nAutor: ").append(this.autor);
+        sb.append("\nTitulo: ").append(this.titulo);
+        sb.append("\nEditorial: ").append(this.editorial);
+        if ((getClass().getSimpleName()).equals("Comics")){
+            return sb.toString();}
+        else{sb.append("\n\n----------------------------------------------------------------");}
         return sb.toString();
     }
 

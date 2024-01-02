@@ -28,10 +28,11 @@ public class IPhone extends Electronico{
     @Override
     public String imprimir() {
         StringBuilder sb = new StringBuilder(super.imprimir());
+        sb.append("\nProducto: ").append(getClass().getSimpleName());
         sb.append("\nColor: ").append(this.color);
         sb.append("\nModelo: ").append(this.modelo);
-        return sb.toString();
-    }
+        sb.append("\n\n----------------------------------------------------------------");
+        return sb.toString();    }
 
     /*------------------MÉTODOS--------------------*/
 

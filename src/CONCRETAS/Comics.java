@@ -22,7 +22,16 @@ public class Comics extends Libro {
     public double getPrecioVenta() {
         return this.precio;
     }
-/*------------------MÉTODO--------------------*/
+
+    @Override
+    public String imprimir() {
+        StringBuilder sb = new StringBuilder(super.imprimir());
+        sb.append("\nPersonaje: ").append(this.personaje);
+        sb.append("\n\n----------------------------------------------------------------");
+        return sb.toString();
+    }
+
+    /*------------------MÉTODO--------------------*/
 
 /*------------------CONSTRUCTOR--------------------*/
     public Comics(int precio, Date fechaPublicación, String autor, String titulo, String editorial, String personaje) {

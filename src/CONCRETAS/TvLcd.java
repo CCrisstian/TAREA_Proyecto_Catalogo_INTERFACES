@@ -25,7 +25,9 @@ public class TvLcd extends Electronico{
     @Override
     public String imprimir() {
         StringBuilder sb = new StringBuilder(super.imprimir());
+        sb.append("\nProducto: ").append(getClass().getSimpleName());
         sb.append("\nPulgada: ").append(this.pulgada);
+        sb.append("\n\n----------------------------------------------------------------");
         return sb.toString();
     }
 
