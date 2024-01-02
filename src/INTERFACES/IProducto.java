@@ -7,7 +7,7 @@ public interface IProducto {
 
     double getPrecioVenta();
 
-    public String imprimir();
+    String imprimir();
 /*------------------MÉTODOS--------------------*/
 
 }
