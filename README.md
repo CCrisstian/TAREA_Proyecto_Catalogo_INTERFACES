@@ -4,7 +4,7 @@ El objetivo de esta práctica es exponer los conceptos que hay detrás del polim
 Se requiere crear un catalogo de producto con un diseño de jerarquía de clases y uso de interfaces para los métodos (o comportamiento).
 
 ## <h2>Primero</h2>
-Vamos a tener las **<<<interfaces>>>** que describen el comportamiento que deberán tener las clases de la jerarquía:
+Vamos a tener las **< Interfaces >** que describen el comportamiento que deberán tener las clases de la jerarquía:
 ### - Interface **<<IProducto>>** con dos firmas de metodos:
    * int getPrecio()
    * double getPrecioVenta()
