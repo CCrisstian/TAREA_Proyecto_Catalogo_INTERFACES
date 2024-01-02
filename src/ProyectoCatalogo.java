@@ -17,8 +17,9 @@ public class ProyectoCatalogo {
 
         SimpleDateFormat formato = new SimpleDateFormat("dd-MM-yyyy");
         Date fechaEspecifica = formato.parse("01-01-2024");
-
         productos[2] = new Libro(18000,fechaEspecifica,"Eric Gamma","Elementos reusables POO","Curso JAVA");
+
+        fechaEspecifica = formato.parse("31-01-2023");
         productos[3 ] = new Libro(14000,fechaEspecifica,"Martin Fowler","UML Gota a Gota","Curso JAVA");
 
         fechaEspecifica = formato.parse("13-11-2023");
